@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DeskNote – Votre assistant IA sur votre machine</title>
+  <link rel="stylesheet" href="desknote-style-1.css" />
+</head>
+<body>
+
+  <!-- ══ NAVBAR ══ -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar-inner">
+      <a href="#hero" class="logo">
+        <!-- <img src="../assets/images/desknote-icon.jpeg" alt="DeskNote Logo" class="logo-img"/> -->
+        <span>DeskNote</span>
+      </a>
+      <div class="nav-links" id="nav-links">
+        <a href="#hero"              class="nav-link">Accueil</a>
+        <a href="#local"             class="nav-link">À propos</a>
+        <a href="#fonctionnalites"   class="nav-link">Fonctionnalités</a>
+        <a href="#tarifs"            class="nav-link">Tarifs</a>
+        <a href="#faq"               class="nav-link">FAQ</a>
+      </div>
+      <a href="#telechargement" class="btn-dark">Télécharger</a>
+      <button class="burger" id="burger">☰</button>
+    </div>
+  </nav>
+
+  <!-- Menu mobile -->
+  <div class="mobile-menu" id="mobile-menu">
+    <button class="mobile-close" id="mobile-close">✕</button>
+    <a href="#hero"            onclick="fermerMenu()">Accueil</a>
+    <a href="#local"           onclick="fermerMenu()">À propos</a>
+    <a href="#fonctionnalites" onclick="fermerMenu()">Fonctionnalités</a>
+    <a href="#tarifs"          onclick="fermerMenu()">Tarifs</a>
+    <a href="#faq"             onclick="fermerMenu()">FAQ</a>
+    <a href="#telechargement"  onclick="fermerMenu()" class="btn-dark">Télécharger</a>
+  </div>
+
+
+  <!-- ══ HERO ══ -->
+  <section id="hero" class="hero">
+    <div class="container hero-grid">
+
+      <!-- Texte gauche -->
+      <div class="hero-text fade-in">
+        <div class="hero-logo-container">
+          <img src="../assets/images/desknote-icon.jpeg" alt="DeskNote Logo" class="hero-brand-logo"/>
+        </div>
+        <div class="badge">
+          <span class="badge-dot"></span>
+          100% local · Zéro cloud
+        </div>
+        <h1>Votre assistant IA<br><span class="text-green">sur votre machine</span></h1>
+        <p class="hero-desc">
+          Automatisez sans cloud, sans connexion, sans compromis.
+          Décrivez ce que vous voulez faire — DeskNote l'exécute.
+        </p>
+        <div class="hero-btns">
+          <a href="#telechargement" class="btn-dark">Télécharger gratuitement</a>
+          <a href="#fonctionnalites" class="btn-outline">Voir la démo</a>
+        </div>
+      </div>
+
+      <!-- Mockup droite -->
+      <div class="hero-mockup fade-in delay-2">
+
+        <!-- Fenêtre sombre -->
+        <div class="app-window">
+          <div class="window-bar">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green-dot"></span>
+            <span class="window-title">DeskNote</span>
+          </div>
+          <div class="window-body">
+            <div class="mock-search">+ Nouvelle tâche</div>
+            <div class="mock-search dim">🔍 Rechercher</div>
+            <p class="mock-label">Récents</p>
+            <div class="mock-item">Créer une facture avec…</div>
+            <div class="mock-item">Écrire dans le bloc note…</div>
+            <div class="mock-item">Écrire dans le bloc note…</div>
+            <div class="mock-item green-text">Écrire dans le bloc note…</div>
+            <div class="mock-item">Écrire dans le bloc note…</div>
+          </div>
+        </div>
+
+        <!-- Bulle agent -->
+        <div class="agent-bubble">
+          <div class="agent-top">
+            <div class="agent-avatar">D</div>
+            <div>
+              <p class="agent-name">DeskNote</p>
+              <p class="agent-sub">Décrivez votre tâche, je m'occupe du reste.</p>
+            </div>
+          </div>
+          <div class="quick-actions">
+            <button class="quick-btn">Créer un fichier</button>
+            <button class="quick-btn">Faire une présentation</button>
+            <button class="quick-btn">Rédiger une note</button>
+          </div>
+          <div class="agent-input">
+            <span class="agent-placeholder">comment puis-je vous aider ?</span>
+            <span class="agent-enter">↵</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══ IA 100% LOCALE ══ -->
+  <section id="local" class="section-white">
+    <div class="container local-grid">
+
+      <div class="reveal">
+        <h2 class="section-h2">IA 100% locale</h2>
+        <p class="section-desc">
+          Le modèle tourne entièrement sur votre machine. Aucune donnée ne quitte
+          votre appareil, ni vos fichiers, ni vos commandes, ni vos habitudes.
+        </p>
+        <div class="zero-row">
+          <span class="zero-number">0</span>
+          <span class="zero-unit">octet</span>
+        </div>
+        <p class="zero-sub">envoyé vers un serveur externe</p>
+        <a href="#fonctionnalites" class="btn-outline" style="margin-top:24px;display:inline-block">En savoir plus →</a>
+      </div>
+
+      <div class="reveal delay-2 wifi-card">
+        <div class="wifi-icon">
+          <svg viewBox="0 0 100 100" width="140" height="140">
+            <circle cx="50" cy="78" r="5" fill="#0EA87A"/>
+            <path d="M35 62 Q50 50 65 62" stroke="#0EA87A" stroke-width="5" stroke-linecap="round" fill="none"/>
+            <path d="M22 49 Q50 30 78 49" stroke="#1FC78F" stroke-width="5" stroke-linecap="round" fill="none" opacity="0.7"/>
+            <path d="M10 36 Q50 10 90 36" stroke="#1FC78F" stroke-width="5" stroke-linecap="round" fill="none" opacity="0.4"/>
+            <line x1="15" y1="15" x2="85" y2="85" stroke="#EF4444" stroke-width="6" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <p class="wifi-label">Aucune connexion requise</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ══ FONCTIONNALITÉS ══ -->
+  <section id="fonctionnalites" class="section-light">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <span class="tag-green">ce que l'agent fait pour vous</span>
+        <h2 class="section-h2">Quelques fonctionnalités</h2>
+      </div>
+
+      <div class="cards-grid">
+
+        <div class="card reveal">
+          <span class="tag tag-bureau">Bureau</span>
+          <h3>Création de factures</h3>
+          <p>Générez des factures professionnelles en quelques secondes. Remplissage automatique des champs, mise en forme incluse — sans ouvrir un logiciel de comptabilité.</p>
+        </div>
+
+        <div class="card reveal delay-1">
+          <span class="tag tag-bureau">Bureau</span>
+          <h3>Création de présentations</h3>
+          <p>Décrivez votre sujet, l'agent structure et génère vos diapositives PowerPoint. Gagnez les 30 minutes que vous passiez à formater chaque slide.</p>
+          <div class="steps">
+            <div class="step">→ "Présente le projet Alpha"</div>
+            <div class="step-arrow">⬇</div>
+            <div class="step">🗂 Structure générée (5 slides)</div>
+            <div class="step-arrow">⬇</div>
+            <div class="step">🎨 Mise en forme appliquée</div>
+            <div class="step-arrow">⬇</div>
+            <div class="step green-text">✓ Fichier .pptx ouvert</div>
+          </div>
+        </div>
+
+        <div class="card reveal delay-2">
+          <span class="tag tag-productivite">Productivité</span>
+          <h3>Rédaction dans le Bloc-notes</h3>
+          <p>Décrivez ce que vous voulez écrire, l'agent le rédige et l'ouvre dans votre éditeur. Vos brouillons, notes et listes sans friction.</p>
+        </div>
+
+        <div class="card reveal">
+          <span class="tag tag-systeme">Système</span>
+          <h3>Suppression de fichiers</h3>
+          <p>Identifiez et supprimez les doublons, les fichiers temporaires ou les dossiers inutiles en une seule instruction.</p>
+        </div>
+
+        <div class="card reveal delay-1">
+          <span class="tag tag-fichiers">Fichiers</span>
+          <h3>Organisation de fichiers</h3>
+          <p>Triez, renommez et rangez vos fichiers dans les bons répertoires automatiquement, selon vos propres règles de classement.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ SECTION TARIFS & PRIX DESKNOTE ══ -->
+  <section id="tarifs" class="pricing-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Des tarifs adaptés à vos besoins</h2>
+        <p class="section-desc">Choisissez la formule qui correspond le mieux à votre profil.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- Freemium -->
+        <div class="pricing-card">
+          <div class="card-header">
+            <span class="badge">Gratuit</span>
+            <h3>Freemium</h3>
+            <p class="target">Pour découvrir l'application</p>
+          </div>
+          <div class="card-price">
+            <span class="amount">0 XAF</span>
+            <span class="period">/ mois</span>
+          </div>
+          <ul class="card-features">
+            <li><span class="check check-green">✓</span> Tâches système (orga, renommage, suppression)</li>
+            <li><span class="check check-green">✓</span> Bloc-notes assisté</li>
+            <li><span class="check check-green">✓</span> Factures &amp; présentations</li>
+            <li><span class="check check-green">✓</span> <strong>2</strong> tâches simultanées</li>
+            <li><span class="check check-red">✕</span> Automatisation Office (Word, Excel, PowerPoint)</li>
+            <li><span class="check check-red">✕</span> Recherche en ligne</li>
+          </ul>
+          <a href="#telechargement" class="btn-pricing outline">Télécharger</a>
+        </div>
+
+        <!-- Étudiant -->
+        <div class="pricing-card">
+          <div class="card-header">
+            <span class="badge">Étudiant</span>
+            <h3>Étudiant</h3>
+            <p class="target">Idéal pour les apprentis et chercheurs</p>
+          </div>
+          <div class="card-price">
+            <span class="amount">1 000 XAF</span>
+            <span class="period">/ mois</span>
+          </div>
+          <p class="annual-saving">Ou 9 000 XAF / an</p>
+          <ul class="card-features">
+            <li><span class="check check-green">✓</span> Tout Freemium</li>
+            <li><span class="check check-green">✓</span> Automatisation Word, Excel, PowerPoint</li>
+            <li><span class="check check-green">✓</span> Recherche en ligne</li>
+            <li><span class="check check-green">✓</span> <strong>3</strong> tâches simultanées</li>
+            <li><span class="check check-red">✕</span> Publications sur les réseaux sociaux</li>
+            <li><span class="check check-red">✕</span> Scénarios complexes</li>
+          </ul>
+          <a href="#telechargement" class="btn-pricing">S'abonner</a>
+        </div>
+
+        <!-- Personal Business (Populaire) -->
+        <div class="pricing-card featured">
+          <div class="card-header">
+            <span class="badge highlight">⭐ Populaire</span>
+            <h3>Personal Business</h3>
+            <p class="target">Pour les professionnels indépendants</p>
+          </div>
+          <div class="card-price">
+            <span class="amount">2 500 XAF</span>
+            <span class="period">/ mois</span>
+          </div>
+          <p class="annual-saving">Ou 22 000 XAF / an</p>
+          <ul class="card-features">
+            <li><span class="check check-green">✓</span> Tout Étudiant</li>
+            <li><span class="check check-green">✓</span> Publication Facebook &amp; TikTok</li>
+            <li><span class="check check-green">✓</span> Scénarios complexes (tâches séquentielles)</li>
+            <li><span class="check check-green">✓</span> Support prioritaire</li>
+            <li><span class="check check-green">✓</span> <strong>5</strong> tâches simultanées</li>
+            <li><span class="check check-red">✕</span> Connecteurs externes (Gemini, ChatGPT, Claude, Veo)</li>
+          </ul>
+          <a href="#telechargement" class="btn-pricing action">Choisir</a>
+        </div>
+
+        <!-- Équipe Pro -->
+        <div class="pricing-card">
+          <div class="card-header">
+            <span class="badge">Équipe</span>
+            <h3>Équipe Pro</h3>
+            <p class="target">Pour les petites équipes et structures</p>
+          </div>
+          <div class="card-price">
+            <span class="amount">4 000 XAF</span>
+            <span class="period">/ siège / mois</span>
+          </div>
+          <p class="annual-saving">Ou 35 000 XAF / an</p>
+          <ul class="card-features">
+            <li><span class="check check-green">✓</span> Tout Personal Business</li>
+            <li><span class="check check-green">✓</span> YouTube, WhatsApp, Photoshop</li>
+            <li><span class="check check-green">✓</span> Connecteurs externes (Gemini, ChatGPT, Claude, Veo)</li>
+            <li><span class="check check-green">✓</span> Scénarios cross-platform (image → publication)</li>
+            <li><span class="check check-green">✓</span> <strong>10</strong> tâches simultanées</li>
+          </ul>
+          <a href="#telechargement" class="btn-pricing">Contacter le support</a>
+        </div>
+
+        <!-- Entreprise Sur Devis (NOUVELLE CARTE) -->
+        <div class="pricing-card enterprise">
+          <div class="card-header">
+            <span class="badge">Sur mesure</span>
+            <h3>Entreprise</h3>
+            <p class="target">Pour les grandes structures</p>
+          </div>
+          <div class="card-price">
+            <span class="amount">Sur devis</span>
+          </div>
+          <p class="annual-saving" style="color:var(--vert);">Personnalisé selon vos besoins</p>
+          <ul class="card-features">
+            <li><span class="check check-green">✓</span> Tout Équipe Pro</li>
+            <li><span class="check check-green">✓</span> Workflows métier sur mesure</li>
+            <li><span class="check check-green">✓</span> Modèle IA personnalisé</li>
+            <li><span class="check check-green">✓</span> Intégration logiciels métier</li>
+            <li><span class="check check-green">✓</span> <strong>20+</strong> tâches simultanées</li>
+          </ul>
+          <a href="#contact" class="btn-pricing enterprise-btn">📩 Demander un devis</a>
+        </div>
+      </div>
+
+      <!-- Note de bas de page sur le paiement sécurisé -->
+      <div class="payment-methods">
+        <p>🔒 Les transactions sont sécurisées et s'effectuent par les moyens de paiement locaux (Mobile Money).</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══ FAQ ══ -->
+  <section id="faq" class="section-white">
+    <div class="container faq-container">
+
+      <h2 class="section-h2 text-center reveal">Questions fréquemment posées</h2>
+
+      <div class="faq-list">
+
+        <div class="faq-item reveal">
+          <button class="faq-btn">
+            <span>Mes fichiers et données sont-ils envoyés quelque part ?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            Non. DeskNote fonctionne entièrement en local. Aucune donnée ne quitte votre machine. Le modèle IA tourne directement sur votre CPU, sans connexion internet.
+          </div>
+        </div>
+
+        <div class="faq-item reveal delay-1">
+          <button class="faq-btn">
+            <span>Quelles sont les ressources minimales requises ?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            DeskNote nécessite au minimum 4 Go de RAM et un processeur récent (2018+). Les modèles légers comme Qwen2.5 fonctionnent avec seulement 1 Go de RAM dédiée.
+          </div>
+        </div>
+
+        <div class="faq-item reveal delay-2">
+          <button class="faq-btn">
+            <span>Quels systèmes d'exploitation sont supportés ?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            Windows 10/11, macOS 12+ et les distributions Linux principales (Ubuntu, Debian, Fedora).
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-btn">
+            <span>Comment mettre à jour l'agent sans connexion permanente ?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            Les mises à jour sont téléchargeables manuellement depuis cette page. Une connexion n'est requise qu'au moment du téléchargement initial.
+          </div>
+        </div>
+
+        <div class="faq-item reveal delay-1">
+          <button class="faq-btn">
+            <span>L'agent peut-il accéder à tous mes dossiers et fichiers ?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            Uniquement les dossiers que vous autorisez. DeskNote demande confirmation avant chaque action critique.
+          </div>
+        </div>
+
+        <div class="faq-item reveal delay-2">
+          <button class="faq-btn">
+            <span>Certaines fonctionnalités nécessitent-elles internet ?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            La recherche web est la seule fonctionnalité nécessitant une connexion. Tout le reste fonctionne hors-ligne.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══ TÉLÉCHARGEMENT ══ -->
+  <section id="telechargement" class="section-dark">
+    <div class="container text-center reveal">
+      <h2 class="dl-title">Téléchargez <span class="text-green">DeskNote</span> en un clic</h2>
+      <p class="dl-sub">· Aucun compte, aucune carte bancaire, aucune connexion requise pour commencer.</p>
+      <div class="dl-btns">
+        <a href="#" class="dl-btn"> Windows</a>
+        <a href="#" class="dl-btn"> Mac OS</a>
+        <a href="#" class="dl-btn"> Linux</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══ FOOTER ══ -->
+  <footer class="footer">
+    <div class="container footer-grid">
+
+      <div>
+        <p class="footer-logo">DeskNote</p>
+        <p class="footer-desc">L'assistant IA qui respecte votre vie privée. Vos données restent sur votre machine.</p>
+      </div>
+
+      <div>
+        <p class="footer-title">Navigation</p>
+        <ul>
+          <li><a href="#hero">Accueil</a></li>
+          <li><a href="#local">À propos</a></li>
+          <li><a href="#fonctionnalites">Fonctionnalités</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="footer-title">Mentions légales</p>
+        <ul>
+          <li><a href="#">Politique de confidentialité</a></li>
+          <li><a href="#">Documentation</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="footer-title">Téléchargement</p>
+        <ul>
+          <li><a href="#">Windows</a></li>
+          <li><a href="#">Linux</a></li>
+          <li><a href="#">Mac OS</a></li>
+        </ul>
+        <p class="footer-title" style="margin-top:20px">Newsletter</p>
+        <p class="footer-desc">Restez au courant des dernières mises à jour.</p>
+        <div class="newsletter">
+          <input type="email" placeholder="email" class="newsletter-input" />
+          <button class="newsletter-btn">s'inscrire</button>
+        </div>
+      </div>
+
+    </div>
+    <div class="footer-bottom">
+      <p>Copyright © DeskNote 2026</p>
+    </div>
+  </footer>
+
+  <script src="desknote-app-2.js"></script>
+</body>
+</html>
